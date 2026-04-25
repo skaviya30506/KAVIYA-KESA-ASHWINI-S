@@ -1,0 +1,22 @@
+#include <stdio.h>
+void checkEvenOdd(int num) 
+{
+    int temp = num;
+    temp = temp >> 1;
+    temp = temp << 1;
+    if (temp == num) 
+{
+        printf("Even\n");
+    }
+    else 
+{
+        printf("Odd\n");
+    }
+}
+
+int main() 
+{
+    int num = 7;
+    checkEvenOdd(num);
+    return 0;
+}
