@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+int isVowel(char ch)
+{
+    char vowels[] = "aeiouAEIOU";
+    return (strchr(vowels, ch) != NULL);
+}
+int main()
+{
+    if (isVowel('a'))
+        printf("a is vowel\n");
+    else
+        printf("a is consonant\n");
+    return 0;
+}
